@@ -161,6 +161,7 @@ nav span {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-top: 20px;
+    color: white;
 }
 .aboutlec {
     font-family: 'Poppins', sans-serif;
@@ -171,6 +172,11 @@ nav span {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    height: 350px;
+}
+.lec-logos a {
+     position: relative;
+     top: -350px;
 }
 .lec-part .lec-logos .lec-logo1 img {
     width: 300px;
@@ -193,6 +199,8 @@ nav span {
     background-color: transparent;
     transform: translateY(-355px);
     transition: 0.5s ease;
+    position: relative;
+    top: 350px;
 }
 .lec-layer p {
    font-family: 'Poppins', sans-serif;
@@ -221,6 +229,7 @@ nav span {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      height: 120vh;
    }
    .lec-logo1 {
       margin-top: 40px;
@@ -241,7 +250,7 @@ nav span {
       font-size: 20px;
    }
    .lec-part {
-      height: 150vh;
+      height: 160vh;
       width: 100vw;
    }
    .lec-logos a {
@@ -265,6 +274,158 @@ nav span {
   }
 }
 /* -------------------classes and form----------------- */
+.lec-formNclass {
+   height: 130vh;
+   width: 100vw;
+   border-top: 10px solid white;
+   background-image: linear-gradient(rgba(16, 1, 1, 0.8),rgba(16, 1, 1, 0.8)), url(lappiimg.jpg);
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.lec-class {
+   margin-top: 20px;
+   height: 400px;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+}
+.lec-class h3 {
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-size: 30px;
+   margin-top: 20px;
+}
+.lec-class p {
+   text-align: center;
+}
+.lec-a-tags {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 20px;
+}
+.lec-class a {
+   width: 150px;
+   margin: 10px;
+   text-align: center;
+   border: 2px solid white;
+   padding: 10px 20px 10px 20px;
+   transition: 0.3s;
+   background: transparent;
+}
+.lec-class a:hover {
+   border: 2px solid rgb(171, 26, 26);
+   background-color: rgb(171, 26, 26);
+   transition: 0.5s ease;
+}
+/* --------------------form------------------------- */
+.lec-form {
+   border: 2px solid white;
+   width: 80vw;
+   height: 100%;
+   margin-bottom: 50px;
+}
+.lec-form h3 {
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-size: 50px;
+   margin-top: 20px;
+   transition: 0.3s ease;
+}
+.lec-form p {
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   opacity: 1;
+}
+.lec-form .input {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.lec-form input {
+   width: 80%;
+   height: 45px;
+   margin-top: 5px;
+   color: black;
+}
+.lec-form p {
+   margin: 20px;
+   font-size: 30px;
+   color: rgb(255, 255, 255);
+   opacity: 0;
+   font-weight: 800;
+   transition: 0.3s ease;
+}
+.input input::placeholder {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   color: rgb(171, 26, 26);
+}
+
+.lec-form input:hover  {
+       border: 3px solid rgb(0, 0, 0);
+}
+.lec-form:hover h3 {
+   font-weight: 800;
+   font-size: 60px;
+   color: rgb(171, 26, 26);
+   transition: 0.5s ease;
+   cursor:default;
+}
+.lec-form:hover p {
+   opacity: 1;
+   transition: 0.3s ease;
+}
+.input .formdes {
+   height: 150px;
+   width: 80%;
+   margin-top: 5px;
+   color: black;
+}
+.input .formdes::placeholder {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   color: rgb(171, 26, 26);
+}
+.input .formdes:hover {
+   border: 3px solid rgb(0, 0, 0);
+}
+.input .lec-submit {
+   width: 100px;
+   background-color: transparent;
+   margin-top: 10px;
+   border: 2px solid white;
+   transition: 0.5s ease; 
+}
+.input .lec-submit::placeholder {
+   color: white;
+}
+.input .lec-submit:hover {
+   background-color: white;
+   border: 2px solid white;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+/* -----------------media for classnform---------------- */
+@media(max-width : 700px) {
+   .lec-form p {
+      display: none;
+   }
+   .lec-formNclass h3 {
+         font-size: 30px;
+   }
+   .input {
+      margin-top: 20px;
+   }
+   .lec-form:hover h3 {
+      font-size: 30px;
+   }
+   
+}
 
 /* ------------------footer------------- */
 .footer {
