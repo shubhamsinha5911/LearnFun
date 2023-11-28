@@ -15,10 +15,10 @@
         <span class="backbtn" onclick="hideMenu()">   < Back  </span>    
         <a href="index.html"><span class="opt">Home</span></a>
         <a href="lectures.html"><span class="opt">Lectures</span></a>
-        <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">Course</span></a>
+        <a href="course.html"><span class="opt">Course</span></a>
         <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">Plan</span></a>
         <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">Account</span></a>
-        <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">SignOut
+        <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt sign-out">SignOut
         <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i> </span> </a> 
        </div>
        <span class="menubtn" onclick="showMenu()">Menu</span>
@@ -172,7 +172,17 @@
       behavior: "smooth"
     });
   }
+  
+      // Select the button with the class "lec-scroll"
+const scrollButton = document.querySelector('.visit');
 
+// Add a click event listener to the button
+scrollButton.addEventListener('click', function() {
+    window.scrollBy({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
+});  
 
 
 </script>

@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lectures</title>
+    <title>Course</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="lectures.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="course.css">
 </head>
 <body>
+  <header>  
     <nav>
         <a href="file:///C:/Users/shiva/Downloads/undercon.avif"><span class="webname">LearnFun</span></span></a> 
          <div class="opts" id="navLinks">
          <span class="backbtn" onclick="hideMenu()">   < Back  </span>    
          <a href="index.html"><span class="opt">Home</span></a>
-         <a href=""><span class="opt">Lectures</span></a>
+         <a href="lectures.html"><span class="opt">Lectures</span></a>
          <a href="course.html"><span class="opt">Course</span></a>
          <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">Plan</span></a>
          <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">Account</span></a>
-         <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt">SignOut
+         <a href="file:///C:/Users/shiva/Downloads/stockunder.jpg"><span class="opt sign-out">SignOut
          <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i> </span> </a> 
         </div>
         <span class="menubtn" onclick="showMenu()">Menu</span>
@@ -26,59 +26,67 @@
      </header>
      <div class="mainbg">
          <div class="bodytext">
-             <h1>"Easy And Graspable Conceptual Lectures"</h1>
-             <p>-"engaging, informative lectures delivered by passionate professors <br> foster deep learning and critical thinking at our esteemed university."-</p>
-             <!-- <a href="" class="scroll">Scroll Down To Know More</a> -->
-             <button class="lec-scroll">Click To Scroll Down</button>
+             <h1>"Explore Our Exciting Course Offerings"</h1>
+             <p>-discover diverse courses tailored to your interests and goals.<br> From arts to technology, explore our extensive selection for your journey ahead.-</p>
+             <button class="ex-scroll">Click To Explore</button>
          </div>
      </div>
-     <!-- ------------------Lecturers------------------------- -->
-       <div class="lec-part">
-        <h1>Click To Watch Our Best Lecturers</h1>
-        <p class="aboutlec">these are some of our most appreciated lectures famous for their teaching style as well <br>as most loved by our students having unbelievable skills</p>
-         <div class="lec-logos">
-            <div class="lec-logo1">
-                <img src="pwlogoweb.png" alt="pw">
-                <a href="https://youtube.com/@PhysicsWallah?si=6l2G4pcEwdLy128f" target="_main"><div class="lec-layer"><p>Physics Wallah</p></div></a>
-            </div>
-            <div class="lec-logo2">
-                <img src="dearsirweb.jpg" alt="dearsir">
-                <a href="https://youtube.com/@DearSir?si=wc4XgPjsdlcqESAY" target="_main"><div class="lec-layer"><p>Dear Sir</p></div></a>
-            </div>
-            <div class="lec-logo3">
-              <img src="mgbrainweb.jpg" alt="magnetbrains">
-              <a href="https://youtube.com/@MagnetBrainsEducation?si=7rPk8VAtk5UfOhsw" target="_main"><div class="lec-layer"><p>Magnet Brains</p></div></a>
-            </div>
-         </div>
-       </div>
-<!-- ---------------------------form---------------------- -->
-       <div class="lec-formNclass">
-              <div class="lec-class">
-                <h3>Study According To Your Standard!</h3>
-                <p>click below on your corresponding standard to learn choosingly</p>
-                   <div class="lec-a-tags">
-                    <a href="https://www.youtube.com/watch?v=0CW4VbfH4kk&list=PLcJiYBaxEj82X18wDx1xsnWpwSpkVqaAH" target="_main" class="cl10">Class 10th</a>
-                    <a href="https://youtu.be/q7VDw_eHZPQ?si=yVzMqX466tIrWica" target="_main" class="cl11">Class 11th</a>
-                    <a href="https://youtu.be/cinhIhVR8_4?si=CORlvFYw9AHfkzwP" target="_main" class="cl12">Class 12th</a>
-                   </div>
-              </div>
-              <div class="lec-form">
-                  <h3>Fill Up For Home Tutions</h3>
-                  <p>Hurry Up And Fill Up ASAP</p>
-                 <div class="input">
-                  <input type="text" placeholder="Name" class="PCH formname">
-                  <input type="text" placeholder="Standard" class="PCH formclass">
-                  <input type="text" placeholder="Address" class="PCH formadd">
-                  <!-- <input type="text" placeholder="Describe Yourself" class="PCH formdes"> -->
-                  <textarea class="PCH formdes" placeholder="Describe Yourself"></textarea>
-                  <input type="submit" placeholder="submit" class="lec-submit">
-                 </div>
-              </div>
-       </div>
+     <!-- -------------------navend----------------------------------------------- -->
 
-
-     <!-- -------------Footer---------------------- -->
-     <div class="footer">
+     <!-- ---------------------------courses--------------------------------- -->
+      <div class="courses">
+        <h2>Choose the plan according to your course</h2>
+        <p>Publish your passions your way.Whether you'd like to share your knowledge,experiences or the latest news.</p>
+        <div class="courses-plans">
+          <div class="plan1">
+            <p class="plan1p pp">Slow Learner</p>
+            <h3 class="ph3">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <p class="price">5000.00</p>
+            </h3>
+               <div class="content">
+                <p>-Strict Teaching</p>
+                <p>-12 Hours Studying</p>
+                <p>-No Holidays</p>
+               </div>
+               <div class="buynowbtn">
+                <a href="https://images.app.goo.gl/zBozKekMCVdhGdqA7" target="_main" class="buybtn">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan2">
+            <p class="plan2p pp">Average</p>
+            <h3 class="ph3">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+               <p class="price">2000.00</p>
+            </h3>
+            <div class="content">
+              <p>-Normal Teaching</p>
+              <p>-Doubt Solving</p>
+              <p>-Sundays</p>
+             </div>
+             <div class="buynowbtn">
+              <a href="https://images.app.goo.gl/zBozKekMCVdhGdqA7" target="_main" class="buybtn">Buy Now</a>
+          </div>
+          </div>
+          <div class="plan3">
+            <p class="plan3p pp">Topper</p>
+            <h3 class="ph3">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <p class="price">10000.00</p>
+            </h3>
+            <div class="content">
+              <p>-Quality Teaching</p>
+              <p>-6 hours per day</p>
+              <p>-Weekends</p>
+             </div>
+               <div class="buynowbtn">
+                   <a href="https://images.app.goo.gl/zBozKekMCVdhGdqA7" target="_main" class="buybtn">Buy Now</a>
+               </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------Footer-------------------------------------- -->
+      <div class="footer">
         <div class="spantextbot">
           <span class="spantextfoot">"LearnFun: Embark on an interactive journey to knowledge! Our vibrant platform merges education and enjoyment, offering engaging lessons, <br> quizzes, and activities. Experience the joy of learning with diverse subjects, captivating tutorials, and a playful approach, making education an entertaining adventure at LearnFun!"</span>
         </div>
@@ -122,28 +130,28 @@
         </div>
     </div>
     <!-- ---------------Javascript------------------------ -->
-       <script>
+    <script>
           
-          var navLinks = document.getElementById("navLinks");
+      var navLinks = document.getElementById("navLinks");
 
 function showMenu() {
-    navLinks.style.right = "0";
+navLinks.style.right = "0";
 }
 function hideMenu() {
-    navLinks.style.right = "-200px";
+navLinks.style.right = "-200px";
 }
 
 
-        // Select the button with the class "lec-scroll"
-const scrollButton = document.querySelector('.lec-scroll');
+    // Select the button with the class "lec-scroll"
+const scrollButton = document.querySelector('.ex-scroll');
 
 // Add a click event listener to the button
 scrollButton.addEventListener('click', function() {
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    });
+window.scrollBy({
+    top: window.innerHeight,
+    behavior: 'smooth'
 });
-       </script>
+});
+   </script>
 </body>
 </html>
