@@ -45,6 +45,7 @@ nav span {
    color: #000;
    cursor: pointer;
    transition: 0.5s ease;
+   font-weight: 500;
 }
 .webname {
    cursor: pointer;
@@ -268,6 +269,7 @@ nav span {
    color: black;
    display: inline;
    font-size: 50px;
+   cursor: default;
 }
 .ph3  {
    text-align: center;
@@ -317,7 +319,7 @@ nav span {
       font-size: 30px;
    }
    .courses {
-      height: 220vh;
+      height: 300vh;
    }
    .plan1 {
       margin-bottom: 50px;

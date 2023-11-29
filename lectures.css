@@ -39,16 +39,19 @@ nav span {
   font-size: 20px;
   margin-left: 50px;
   font-weight: 200px;
+  transition: 0.5s ease;
 }
 .opt:hover {
   background-color: rgb(171, 26, 26);
   color: #000;
   cursor: pointer;
   transition: 0.5s ease;
+  font-weight: 500;
 }
 .webname {
   cursor: pointer;
 }
+/* ----- */
 .bodytext h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
@@ -231,6 +234,15 @@ nav span {
       justify-content: space-evenly;
       height: 120vh;
    }
+   .lec-logos a {
+      width: 90%;
+      height: 250px;
+      padding: 50px 40px 50px 40px;
+      margin: 0;
+      position: relative;
+      top: -125px;
+      right: 150px;
+   }
    .lec-logo1 {
       margin-top: 40px;
    }
@@ -244,7 +256,8 @@ nav span {
       width: 200px;
       height: 250px;
       position: absolute;
-      top: 355px;
+      top: 296px;
+      left: -50px;
    }
    .lec-layer p {
       font-size: 20px;
@@ -252,10 +265,6 @@ nav span {
    .lec-part {
       height: 160vh;
       width: 100vw;
-   }
-   .lec-logos a {
-      position: absolute;
-      left: 100px;
    }
    .lec-part .lec-logos .lec-logo1 img {
       width: 200px;
@@ -403,7 +412,7 @@ nav span {
 }
 .input .lec-submit {
    color: white;
-  font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
    font-weight: 700;
 }
 .input .lec-submit:hover {
@@ -420,6 +429,9 @@ nav span {
    }
    .lec-formNclass h3 {
          font-size: 30px;
+   }
+   .lec-formNclass {
+      height: 110vh;
    }
    .input {
       margin-top: 20px;

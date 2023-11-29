@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400&family=Kanit:wght@300&family=Montserrat&family=Nunito&family=Poppins:ital,wght@0,300;0,500;0,600;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400&family=Montserrat&family=Nunito&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400&family=Montserrat&family=Nunito&family=Playfair+Display:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:ital,opsz,wght@0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400&family=Montserrat&family=Nunito&family=Playfair+Display:wght@500&family=Poppins:wght@500&display=swap');
 * {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Nunito', sans-serif;
@@ -14,10 +15,12 @@
   list-style: none;
 }
 .mainbg {
-  background-image: linear-gradient(rgba(16, 1, 1, 0.9),rgba(16, 1, 1, 0.9)), url(signupbg.jpg);
+  background-image: linear-gradient(rgba(16, 1, 1, 0.8),rgba(16, 1, 1, 0.8)), url(aboutbg.jpg);
   background-size: cover;
-  height: 610px; 
+  background-position: left 1% top -100px;
+  height: 85vh; 
   width: 100vw;
+  border-bottom: 10px solid rgb(171, 26, 26);
 }
 
 nav {
@@ -51,7 +54,41 @@ nav span {
 .webname {
   cursor: pointer;
 }
-@media(max-width: 700px) {
+/* ----- */
+.bodytext h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: white;
+  }
+  .bodytext p {
+    font-family: 'Poppins', sans-serif; 
+    margin: 10px 0 40px;
+    text-transform: lowercase;
+  }
+  .bodytext {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    cursor: default;
+  }
+  @media(max-width: 700px) {
+    .bodytext h1 {
+          font-size: 30px;
+    }
+    .bodytext {
+       padding-right: 10px;
+    }
+    .bodytext p {
+       font-size: 10px   ;
+    }
+    body {
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
     nav .opt {
        display: block;
        margin-left: 40px;
@@ -100,169 +137,131 @@ nav span {
     background-color: rgb(171, 26, 26);
     display: none;
   }
-  /* ---------------signupform------------------------- */
-  .mainbg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .signupform {
-    width: 600px;
-    height: 590px;
-    background-color: rgb(77, 6, 6);
-    border-radius: 20px;
-  }
- .signupform h3 {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin: 20px 20px 10px 20px;    
-    font-family: 'Poppins', sans-serif;
- }
- .usernameNpass  {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
- }
- .usernameNpass input {
-    width: 500px;
-    height: 40px;
-    border-radius: 15px;
-    color: black;
-    border: 2px solid white;
- }
- .usernameNpass input::placeholder {
-   color: rgb(77, 6, 6);
+
+  /* --------------------------about dev css--------------------------- */
+  .bgcolor {
+   background-color: #272932;
    position: absolute;
-   left: 20px;
- }
- .usernameNpass .fa-solid {
-   margin: 10px;
- }
- .usernameNpass p {
-  font-family: 'Poppins', sans-serif;
- }
- .usernameNpass .signinbtn {
-  width: 500px;
-  height: 40px;
-  border: 2px solid rgb(171, 26, 26);
-  border-radius: 15px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 30px;
-   background-color: rgb(171, 26, 26);
-   transition: 0.5s ease;
- }
- .usernameNpass .signinbtn:hover {
-  background-color: white;
-  color: rgb(171, 26, 26);
-  transition: 0.5s ease;
-  box-shadow: 2px 2px 20px 2px rgb(171, 26, 26);
- }
- .forgetpass {
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
- }
- .or {
-  margin: 20px  ;
-  cursor: default;
- }
- .twitt .signintwitter {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #1DA1F2;
-   transition: 0.5s ease;
-   font-family: 'Poppins', sans-serif;
-   width: 500px;
-   height: 40px;
-   border: 2px solid #1DA1F2;
-   border-radius: 15px;
-   margin-top: 0px;
-   transition: 0.5s ease;
- }
- .twitt .signintwitch {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 30px;
-   background-color: #8c44f7;
-   transition: 0.5s ease;
-   font-family: 'Poppins', sans-serif;
-   width: 500px;
-   height: 40px;
-   border: 2px solid #8C44F7;
-   border-radius: 15px;
-   transition: 0.5s ease;
- }
- .twitt .fa-brands {
-  margin: 20px;
- }
- .twitt a:hover {
-  transform: scale(1.05);
-  transition: 0.5s ease;
- }
- /* ------------------media for sign up------------------------------- */
- @media(max-width : 700px) {
-  .signupform {
-    height: 600px;
-    margin-top: 50px;
+   left: 100px;
+   top: 790px;
+   width: 90vw;
+   height: 110vh;
+   z-index: 0;
+   overflow: hidden;
+   border: 10px dashed #DBDFAC;
+   border-radius: 50px;
+   animation: slideinleft 2s ease 2s  ;
   }
-  .mainbg {
-    height: 100vh;
+  .aboutdev {
+    width: 100vw;
+    height: 130vh;
     display: flex;
-
-    justify-content: center;
-    align-items: flex-start;
+    background-color: #D5DFE5;
+    z-index: -1 ;
+    /* margin-bottom: 100px; */
   }
-  .signupform {
-    width: 80%;
+  .shubh img {
+    height: auto;
+    width: 500px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    border: 10px dashed #DBDFAC;
+    animation: spin 7s ease-in-out 2s infinite ;
   }
-  .signupform h3 {
-    font-size: 30px;
+  .aboutdev h3 {
+   color: #A5BE00;
+   font-size: 50px;
+   font-family: 'Abril Fatface', serif;
+   font-size: 100px;
+   font-weight: 200;
+   position: relative;
+   top: 45px;
+   right: 50px;
+   animation: slidefromtop 2s ease 2s  ;
+   cursor: default;  
   }
-  .usernameNpass input {
-    width: 300px;
+  .aboutpara {
+   width: 900px;
+   height: 100%;
+   position: relative;
+   left: 400px;
+   top: 220px;
   }
-  .usernameNpass .signinbtn {
-   width: 300px;
+  .aboutpara p {
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   color: #DBDFAC;
   }
-  .usernameNpass .forgetpass {
-    width: 280px;
-  }
-  .twitt {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .usernameNpass .twitt .signintwitter {
-    width: 300px;
-  }
-  .usernameNpass .twitt .signintwitch {
-    width: 300px;
-  }
+  @keyframes slidein {
+   from {
+     transform: translateX(-500px);
+   }
+   to {
+     transform: translateX(0px);
+   }
  }
-
- /* ------------------footer------------- */
- .footer {
-  display: none;
+ @keyframes slidefromtop {
+   from {
+      transform: translateY(-200px);
+   }
+   to {
+      transform: translateY(0px);
+   }
  }
+ @keyframes slideinleft {
+   from {
+     transform: translateX(500px);
+   }
+   to {
+     transform: translateX(0px);
+   }
+}
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+/* ----------------------media for aboutdev---------------------------- */
 @media(max-width: 700px) {
-  .footer {
+   .shubh img {
+      width: 200px;
+   }
+   .aboutdev h3 {
+      font-size: 50px;
+   }
+   .bgcolor {
+      left: 20px;
+      border-radius: 50px;
+   }
+   .aboutpara p {
+      font-size: 12px;
+      width: 320px;
+   }
+   .aboutpara {
+      width: 360px;
+      height: 100%;
+      position: relative;
+      left: 10px;
+      top: 200px;
+   }
+}
+
+/* ------------------footer------------- */
+.footer {
     height: 90vh;
     width: 100vw;
-    display: block;
     flex-wrap: wrap;
     justify-content: center;
-    border-top: 10px solid rgb(255, 255, 255);
+    border-top: 10px solid rgb(171, 26, 26);
     background-color: rgb(77, 6, 6);
-  }
-  .button {
+    z-index: 1;
+    /* margin-top: 19px; */
+ }
+ .button {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -274,7 +273,7 @@ nav span {
     border-radius: 5px;
     cursor: pointer;
   }
-  .footer .spantextbot {
+ .footer .spantextbot {
     text-align: center; 
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -283,46 +282,45 @@ nav span {
     height: 100px;
     width: 100vw;
     border-bottom: 2px solid white; 
-  }
-  .descr {
+ }
+ .descr {
       margin-top: 50px;
       display: flex;
       justify-content: space-evenly;
-  }
-  .footer .descr li {
+ }
+ .footer .descr li {
     margin-top: 15px;
-  }
-  .headofli {
+ }
+ .headofli {
     font-weight: 700;
-  }
-  .copyright {
+ }
+ .copyright {
     text-align: center;
     margin-top: 100px;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .footer .socialmedia a {
+ }
+ .footer .socialmedia a {
     font-size: 20px;
     margin-left: 10px;
     
-  }
-  .socialmedia {
+ }
+ .socialmedia {
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(40px);
-  }
-}
-@media(max-width: 700px) {
-  .footer {
-     height: 100vh;
-  }
-  .footer .spantextbot span {
-     font-size: 10px;
-  }
-  .footer .descr .list3 {
-     display: none;
-  }
-}
+ }
+ @media(max-width: 700px) {
+    .footer {
+       height: 100vh;
+    }
+    .footer .spantextbot span {
+       font-size: 10px;
+    }
+    .footer .descr .list3 {
+       display: none;
+    }
+ }
