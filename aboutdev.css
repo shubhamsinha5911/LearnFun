@@ -236,6 +236,8 @@ nav span {
    .bgcolor {
       left: 20px;
       border-radius: 50px;
+     position: absolute;
+      top: 830px;
    }
    .aboutpara p {
       font-size: 12px;
