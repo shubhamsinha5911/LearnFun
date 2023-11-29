@@ -401,13 +401,16 @@ nav span {
    border: 2px solid white;
    transition: 0.5s ease; 
 }
-.input .lec-submit::placeholder {
+.input .lec-submit {
    color: white;
+  font-family: 'Poppins', sans-serif;
+   font-weight: 700;
 }
 .input .lec-submit:hover {
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    border: 2px solid white;
    transition: 0.5s ease;
+   color: black;
    cursor: pointer;
 }
 /* -----------------media for classnform---------------- */
