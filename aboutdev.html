@@ -44,7 +44,7 @@
           <h3>"-Hi, I am <br> Shubham Sinha"</h3>
      </div>
       <div class="audio">
-        <audio controls autoplay="autoplay" loop="loop" src="Still Rollin - Shubh.mp3" > 
+        <audio controls autoplay="autoplay" loop="loop" src="Still Rollin - Shubh.mp3" id="audio1"> 
         </audio>
       </div>
 
@@ -143,6 +143,15 @@ function topFunction() {
     top: 0,
     behavior: "smooth"
   });
+}
+
+
+
+    // Assuming you have an audio element with the ID 'audio1'
+var audio = document.getElementById('audio1');
+
+if (audio) {
+  audio.volume = 0.5; // Set the volume to 50%
 }
  </script>
 </body>
